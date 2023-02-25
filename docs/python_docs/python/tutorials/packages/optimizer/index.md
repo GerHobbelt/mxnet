@@ -134,7 +134,7 @@ The gradient methods implemented by the optimizers described above use a global 
 
 ### [AdaGrad](../../../api/optimizer/index.rst#mxnet.optimizer.AdaGrad)
 
-The AdaGrad optimizer, which implements the optimization method originally described by [Duchi et al](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf), multiplies the global learning rate by the $L_2$ norm of the preceeding gradient estimates for each paramater to obtain the per-parameter learning rate. To achieve this, AdaGrad introduces a new term which we'll denote as $g^2$ - the accumulated square of the gradient of the loss function with respect to the parameters.
+The AdaGrad optimizer, which implements the optimization method originally described by [Duchi et al](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf), multiplies the global learning rate by the $L_2$ norm of the preceeding gradient estimates for each parameter to obtain the per-parameter learning rate. To achieve this, AdaGrad introduces a new term which we'll denote as $g^2$ - the accumulated square of the gradient of the loss function with respect to the parameters.
 
 Thus the AdaGrad optimizer update function performs the update steps below to obtain $i+1$th refinement.
 
